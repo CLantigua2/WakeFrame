@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WakeFrame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="tray-panel panel">
+        <div class="tray-menu" role="menu" aria-label="WakeFrame tray menu">
+          <div class="tray-brand">
+            <span class="tray-icon">
+              <span class="play-triangle"></span>
+            </span>
+            <span>Wake Video</span>
+          </div>
+
+          <button class="menu-item" type="button">
+            <span class="menu-ico open-ico"></span>
+            <span>Open</span>
+          </button>
+
+          <button class="menu-item toggle-row" type="button" id="trayToggle">
+            <span class="menu-ico enabled-ico"></span>
+            <span>Enabled</span>
+            <span class="switch">
+              <span class="switch-knob"></span>
+            </span>
+          </button>
+
+          <button class="menu-item" type="button" id="settingsBtn">
+            <span class="menu-ico settings-ico"></span>
+            <span>Settings</span>
+          </button>
+
+          <button class="menu-item quit-item" type="button">
+            <span class="menu-ico quit-ico"></span>
+            <span>Quit</span>
+          </button>
+        </div>
+
+        <div class="system-clock">
+          <div class="clock-row">
+            <button class="mini-btn" type="button" aria-label="Play">
+              <span class="mini-play"></span>
+            </button>
+            <button class="mini-btn" type="button" aria-label="Settings">
+              <span class="mini-gear"></span>
+            </button>
+            <button class="mini-btn" type="button" aria-label="Volume">
+              <span class="mini-sound"></span>
+            </button>
+          </div>
+          <div class="time-block" id="timeBlock">5:24 PM</div>
+          <div class="date-block" id="dateBlock">9/13/2026</div>
+        </div>
+
+        <p class="tray-note">
+          Right click the taskbar icon to quickly open the app or toggle it on/off.
+        </p>
+      </aside>
+
+      <main class="content-panel panel">
+        <div class="panel-header">
+          <div class="header-title">
+            <span class="tiny-icon"></span>
+            <span>Wake Video</span>
+          </div>
+          <button class="header-action" type="button" aria-label="Close">×</button>
+        </div>
+
+        <div class="toggle-card">
+          <div class="toggle-row main-toggle">
+            <label class="switch-label" for="mainToggle">Wake Video</label>
+            <button class="switch on" id="mainToggle" type="button" aria-pressed="true">
+              <span class="switch-knob"></span>
+            </button>
+          </div>
+          <p>Show a random video when your PC wakes from sleep or hibernation.</p>
+        </div>
+
+        <div class="video-card">
+          <div class="video-art mountain-scene">
+            <div class="sun-glow"></div>
+            <div class="mountain mountain-back"></div>
+            <div class="mountain mountain-front"></div>
+            <div class="water"></div>
+            <div class="play-badge">▶</div>
+          </div>
+
+          <div class="video-meta">
+            <div class="video-title-wrap">
+              <span class="video-title-label">Mountain Lake</span>
+              <span class="video-dim">4s • 1920x1080</span>
+            </div>
+            <button class="ghost-btn" type="button" id="previewBtn">Preview</button>
+          </div>
+        </div>
+
+        <div class="rotation-block">
+          <div class="rotation-head">
+            <span>Video Rotation</span>
+            <button class="switch on" id="randomToggle" type="button" aria-pressed="true">
+              <span class="switch-knob"></span>
+            </button>
+          </div>
+          <div class="rotation-row">
+            <span class="rotation-label">Play Random</span>
+          </div>
+        </div>
+
+        <div class="videolist" id="videoList"></div>
+
+        <div class="list-footer">
+          <span id="selectionSummary">5 videos • 3 selected</span>
+          <button class="add-btn" type="button" id="addVideoBtn">+ Add Video</button>
+        </div>
+      </main>
+
+      <aside class="preview-panel panel">
+        <div class="panel-header light">
+          <div class="header-title">
+            <span class="tiny-icon"></span>
+            <span>Wake Video</span>
+          </div>
+          <button class="header-action" type="button" aria-label="Close">×</button>
+        </div>
+
+        <div class="preview-art preview-scene mountain-scene">
+          <div class="sun-glow"></div>
+          <div class="mountain mountain-back"></div>
+          <div class="mountain mountain-front"></div>
+          <div class="water"></div>
+        </div>
+
+        <div class="preview-meta">
+          <div class="preview-title">Mountain Lake</div>
+          <div class="preview-sub">4s • 1920x1080</div>
+        </div>
+
+        <div class="preview-helper">Press Esc to close</div>
+      </aside>
+
+      <section class="state-card panel disabled-panel">
+        <div class="panel-header compact">
+          <div class="header-title">
+            <span class="tiny-icon"></span>
+            <span>Wake Video</span>
+          </div>
+          <button class="header-action" type="button" aria-label="Close">×</button>
+        </div>
+
+        <div class="toggle-card muted">
+          <div class="toggle-row main-toggle">
+            <label class="switch-label" for="disabledToggle">Wake Video</label>
+            <button class="switch" id="disabledToggle" type="button" aria-pressed="false">
+              <span class="switch-knob"></span>
+            </button>
+          </div>
+          <p>Show a random video when your PC wakes from sleep or hibernation.</p>
+        </div>
+
+        <div class="disabled-state">
+          <div class="moon-icon"></div>
+          <p>Wake videos are disabled.</p>
+          <span>Enable to start showing videos after your PC wakes.</span>
+        </div>
+      </section>
+
+      <section class="settings-card panel">
+        <div class="panel-header compact">
+          <div class="header-title">
+            <span class="tiny-icon"></span>
+            <span>Settings</span>
+          </div>
+          <button class="header-action" type="button" aria-label="Close">×</button>
+        </div>
+
+        <div class="settings-form">
+          <label class="field">
+            <span class="field-label">Video folder</span>
+            <div class="input-row">
+              <input value="C:/Users/Carlo/Videos/WakeVideos" readonly />
+              <button type="button">Change</button>
+            </div>
+          </label>
+
+          <label class="field">
+            <span class="field-label">Video display time</span>
+            <div class="select-row">
+              <select>
+                <option>4 seconds (default)</option>
+                <option>5 seconds</option>
+                <option>6 seconds</option>
+              </select>
+            </div>
+          </label>
+
+          <label class="field">
+            <span class="field-label">Video resolution (max supported)</span>
+            <div class="select-row">
+              <select>
+                <option>1080p (recommended)</option>
+                <option>1440p</option>
+                <option>4K</option>
+              </select>
+            </div>
+          </label>
+
+          <div class="about-row">
+            <span>About</span>
+            <strong>v1.0.0</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="add-card panel">
+        <div class="panel-header compact">
+          <div class="header-title">
+            <span class="tiny-icon"></span>
+            <span>Add Video</span>
+          </div>
+          <button class="header-action" type="button" aria-label="Close">×</button>
+        </div>
+
+        <div class="dropzone" tabindex="0">
+          <div class="drop-visual"></div>
+          <p>Drag and drop a video file here</p>
+          <span>or click to browse</span>
+        </div>
+
+        <div class="support-strip">Support formats<br />MP4, MOV, AVI, MKV</div>
+
+        <div class="dialog-actions">
+          <button class="secondary-btn" type="button">Cancel</button>
+          <button class="primary-btn" type="button">Add</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

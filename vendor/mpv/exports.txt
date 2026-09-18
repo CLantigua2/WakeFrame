@@ -1,0 +1,240 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36252.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file G:\projects\WakeFrame\vendor\mpv\libmpv-2.dll
+
+File Type: DLL
+
+  Section contains the following exports for libmpv-2.dll
+
+    00000000 characteristics
+           0 time date stamp
+        0.00 version
+           1 ordinal base
+         206 number of functions
+         206 number of names
+
+    ordinal hint RVA      name
+
+          1    0 03BBA770 Java_java_awt_BDFontMetrics_charWidthN
+          2    1 03BBA8B0 Java_java_awt_BDFontMetrics_charsWidthN
+          3    2 03BBA6D0 Java_java_awt_BDFontMetrics_destroyFontN
+          4    3 03BBA250 Java_java_awt_BDFontMetrics_destroyN
+          5    4 03BBA280 Java_java_awt_BDFontMetrics_getFontFamilyAndStyleN
+          6    5 03BBA1F0 Java_java_awt_BDFontMetrics_initN
+          7    6 03BBA4B0 Java_java_awt_BDFontMetrics_loadFontN
+          8    7 03BBA080 Java_java_awt_BDFontMetrics_resolveFontN
+          9    8 03BBA7D0 Java_java_awt_BDFontMetrics_stringWidthN
+         10    9 03BBA070 Java_java_awt_BDFontMetrics_unloadFontConfigN
+         11    A 03BBABC0 Java_java_awt_BDGraphics_drawStringN
+         12    B 03BB9440 Java_org_videolan_Libbluray_cacheBdRomFileN
+         13    C 03BB8AD0 Java_org_videolan_Libbluray_getAacsDataN
+         14    D 03BB98D0 Java_org_videolan_Libbluray_getBdjoN
+         15    E 03BB7D60 Java_org_videolan_Libbluray_getPlaylistInfoN
+         16    F 03BB7B60 Java_org_videolan_Libbluray_getTitleInfosN
+         17   10 03BB8C50 Java_org_videolan_Libbluray_getUOMaskN
+         18   11 03BB9570 Java_org_videolan_Libbluray_listBdFilesN
+         19   12 03BB9260 Java_org_videolan_Libbluray_readRegN
+         20   13 03BB8EF0 Java_org_videolan_Libbluray_seekN
+         21   14 03BB9100 Java_org_videolan_Libbluray_selectAngleN
+         22   15 03BB8F80 Java_org_videolan_Libbluray_selectPlaylistN
+         23   16 03BB91E0 Java_org_videolan_Libbluray_selectRateN
+         24   17 03BB9020 Java_org_videolan_Libbluray_selectTitleN
+         25   18 03BB8D30 Java_org_videolan_Libbluray_setKeyInterestN
+         26   19 03BB8CA0 Java_org_videolan_Libbluray_setUOMaskN
+         27   1A 03BB8E10 Java_org_videolan_Libbluray_setVirtualPackageN
+         28   1B 03BB9110 Java_org_videolan_Libbluray_soundEffectN
+         29   1C 03BB91D0 Java_org_videolan_Libbluray_tellTimeN
+         30   1D 03BB99F0 Java_org_videolan_Libbluray_updateGraphicN
+         31   1E 03BB9340 Java_org_videolan_Libbluray_writeRegN
+         32   1F 03BB7A70 Java_org_videolan_Logger_logN
+         33   20 01010890 mpv_abort_async_command
+         34   21 01012650 mpv_client_api_version
+         35   22 0100E1A0 mpv_client_id
+         36   23 0100E190 mpv_client_name
+         37   24 01010390 mpv_command
+         38   25 01010670 mpv_command_async
+         39   26 01010550 mpv_command_node
+         40   27 01010860 mpv_command_node_async
+         41   28 010105B0 mpv_command_ret
+         42   29 01010610 mpv_command_string
+         43   2A 0100EEB0 mpv_create
+         44   2B 0100F080 mpv_create_client
+         45   2C 0100F990 mpv_create_weak_client
+         46   2D 01010B20 mpv_del_property
+         47   2E 0100E420 mpv_destroy
+         48   2F 01012D20 mpv_error_string
+         49   30 010100F0 mpv_event_name
+         50   31 01012660 mpv_event_to_node
+         51   32 01012D50 mpv_free
+         52   33 010101B0 mpv_free_node_contents
+         53   34 01010E00 mpv_get_property
+         54   35 010113E0 mpv_get_property_async
+         55   36 01011330 mpv_get_property_osd_string
+         56   37 01011280 mpv_get_property_string
+         57   38 01012D60 mpv_get_time_ns
+         58   39 01012DE0 mpv_get_time_us
+         59   3A 010125E0 mpv_get_wakeup_pipe
+         60   3B 01011F90 mpv_hook_add
+         61   3C 01012010 mpv_hook_continue
+         62   3D 0100FA00 mpv_initialize
+         63   3E 010120F0 mpv_load_config_file
+         64   3F 01011590 mpv_observe_property
+         65   40 010B38F0 mpv_render_context_create
+         66   41 010B3DA0 mpv_render_context_free
+         67   42 010B46D0 mpv_render_context_get_info
+         68   43 010B3FD0 mpv_render_context_render
+         69   44 010B4600 mpv_render_context_report_swap
+         70   45 010B46A0 mpv_render_context_set_parameter
+         71   46 010B3F80 mpv_render_context_set_update_callback
+         72   47 010B4650 mpv_render_context_update
+         73   48 0100E0C0 mpv_request_event
+         74   49 01012170 mpv_request_log_messages
+         75   4A 010101C0 mpv_set_option
+         76   4B 010102D0 mpv_set_option_string
+         77   4C 01010940 mpv_set_property
+         78   4D 01010B90 mpv_set_property_async
+         79   4E 01010B70 mpv_set_property_string
+         80   4F 0100E1B0 mpv_set_wakeup_callback
+         81   50 01012F20 mpv_stream_cb_add_ro
+         82   51 0100E890 mpv_terminate_destroy
+         83   52 01011860 mpv_unobserve_property
+         84   53 0100E200 mpv_wait_async_requests
+         85   54 0100F0D0 mpv_wait_event
+         86   55 01010110 mpv_wakeup
+         87   56 036F4460 opus_decode
+         88   57 036F4750 opus_decode24
+         89   58 036F49E0 opus_decode_float
+         90   59 036F2BE0 opus_decoder_create
+         91   5A 036F4A30 opus_decoder_ctl
+         92   5B 036F4CE0 opus_decoder_destroy
+         93   5C 036F5120 opus_decoder_dred_decode
+         94   5D 036F5130 opus_decoder_dred_decode24
+         95   5E 036F5140 opus_decoder_dred_decode_float
+         96   5F 036F4650 opus_decoder_get_nb_samples
+         97   60 036F2A30 opus_decoder_get_size
+         98   61 036F2A50 opus_decoder_init
+         99   62 036F50E0 opus_dred_alloc
+        100   63 036F4FD0 opus_dred_decoder_create
+        101   64 036F50C0 opus_dred_decoder_ctl
+        102   65 036F50B0 opus_dred_decoder_destroy
+        103   66 036F4F20 opus_dred_decoder_get_size
+        104   67 036F4F30 opus_dred_decoder_init
+        105   68 036F50F0 opus_dred_free
+        106   69 036F50D0 opus_dred_get_size
+        107   6A 036F5100 opus_dred_parse
+        108   6B 036F5110 opus_dred_process
+        109   6C 032B7780 opus_encode
+        110   6D 032B7A10 opus_encode24
+        111   6E 032B7C90 opus_encode_float
+        112   6F 032B1450 opus_encoder_create
+        113   70 032B7E30 opus_encoder_ctl
+        114   71 032B8890 opus_encoder_destroy
+        115   72 032B0F80 opus_encoder_get_size
+        116   73 032B0FC0 opus_encoder_init
+        117   74 02801A20 opus_get_version_string
+        118   75 02B8BAD0 opus_multistream_decode
+        119   76 02B8BCE0 opus_multistream_decode24
+        120   77 02B8BF20 opus_multistream_decode_float
+        121   78 02B8B360 opus_multistream_decoder_create
+        122   79 02B8BAA0 opus_multistream_decoder_ctl
+        123   7A 02B8C540 opus_multistream_decoder_destroy
+        124   7B 02B8B050 opus_multistream_decoder_get_size
+        125   7C 02B8B080 opus_multistream_decoder_init
+        126   7D 02800940 opus_multistream_encode
+        127   7E 02800B10 opus_multistream_encode24
+        128   7F 02800CC0 opus_multistream_encode_float
+        129   80 027FF3B0 opus_multistream_encoder_create
+        130   81 028012C0 opus_multistream_encoder_ctl
+        131   82 028012F0 opus_multistream_encoder_destroy
+        132   83 027FE630 opus_multistream_encoder_get_size
+        133   84 027FE840 opus_multistream_encoder_init
+        134   85 032B98E0 opus_multistream_packet_pad
+        135   86 032B99E0 opus_multistream_packet_unpad
+        136   87 027FF500 opus_multistream_surround_encoder_create
+        137   88 027FE660 opus_multistream_surround_encoder_get_size
+        138   89 027FEE10 opus_multistream_surround_encoder_init
+        139   8A 036F4410 opus_packet_get_bandwidth
+        140   8B 036F4450 opus_packet_get_nb_channels
+        141   8C 036F4CF0 opus_packet_get_nb_frames
+        142   8D 036F4D30 opus_packet_get_nb_samples
+        143   8E 036F59A0 opus_packet_get_samples_per_frame
+        144   8F 036F4E20 opus_packet_has_lbrr
+        145   90 032B97B0 opus_packet_pad
+        146   91 036F6170 opus_packet_parse
+        147   92 032B97E0 opus_packet_unpad
+        148   93 036F5990 opus_pcm_soft_clip
+        149   94 032B88F0 opus_repacketizer_cat
+        150   95 032B88C0 opus_repacketizer_create
+        151   96 032B88E0 opus_repacketizer_destroy
+        152   97 032B8B00 opus_repacketizer_get_nb_frames
+        153   98 032B88A0 opus_repacketizer_get_size
+        154   99 032B88B0 opus_repacketizer_init
+        155   9A 032B9680 opus_repacketizer_out
+        156   9B 032B9640 opus_repacketizer_out_range
+        157   9C 02801A00 opus_strerror
+        158   9D 0262A920 sixel_allocator_calloc
+        159   9E 0262AAB0 sixel_allocator_free
+        160   9F 0262A860 sixel_allocator_malloc
+        161   A0 0262A640 sixel_allocator_new
+        162   A1 0262A9F0 sixel_allocator_realloc
+        163   A2 0262A790 sixel_allocator_ref
+        164   A3 0262AB20 sixel_allocator_tests_main
+        165   A4 0262A7D0 sixel_allocator_unref
+        166   A5 014B1660 sixel_dither_apply_palette
+        167   A6 014B0EA0 sixel_dither_create
+        168   A7 014B0ED0 sixel_dither_destroy
+        169   A8 014B1110 sixel_dither_get
+        170   A9 014B15E0 sixel_dither_get_num_of_histgram_colors
+        171   AA 014B15D0 sixel_dither_get_num_of_histogram_colors
+        172   AB 014B15C0 sixel_dither_get_num_of_palette_colors
+        173   AC 014B15F0 sixel_dither_get_palette
+        174   AD 014B1180 sixel_dither_initialize
+        175   AE 014B0C20 sixel_dither_new
+        176   AF 014B0FE0 sixel_dither_ref
+        177   B0 014B1630 sixel_dither_set_body_only
+        178   B1 014B1620 sixel_dither_set_complexion_score
+        179   B2 014B15A0 sixel_dither_set_diffusion_type
+        180   B3 014B1640 sixel_dither_set_optimize_palette
+        181   B4 014B1600 sixel_dither_set_palette
+        182   B5 014B1590 sixel_dither_set_pixelformat
+        183   B6 014B1650 sixel_dither_set_transparent
+        184   B7 014B1B30 sixel_dither_tests_main
+        185   B8 014B0FF0 sixel_dither_unref
+        186   B9 014B1D70 sixel_encode
+        187   BA 0262ABC0 sixel_helper_compute_depth
+        188   BB 014B5ED0 sixel_helper_format_error
+        189   BC 014B5EC0 sixel_helper_get_additional_message
+        190   BD 0262AC00 sixel_helper_normalize_pixelformat
+        191   BE 014B5E80 sixel_helper_set_additional_message
+        192   BF 014B6200 sixel_output_create
+        193   C0 014B6320 sixel_output_destroy
+        194   C1 014B6540 sixel_output_get_8bit_availability
+        195   C2 014B60A0 sixel_output_new
+        196   C3 014B6410 sixel_output_ref
+        197   C4 014B6550 sixel_output_set_8bit_availability
+        198   C5 014B65A0 sixel_output_set_encode_policy
+        199   C6 014B6560 sixel_output_set_gri_arg_limit
+        200   C7 014B6590 sixel_output_set_palette_type
+        201   C8 014B6570 sixel_output_set_penetrate_multiplexer
+        202   C9 014B6580 sixel_output_set_skip_dcs_envelope
+        203   CA 014B6420 sixel_output_unref
+        204   CB 0262C3C0 sixel_pixelformat_tests_main
+        205   CC 0262F810 sixel_quant_tests_main
+        206   CD 014B6000 sixel_status_tests_main
+LINK : warning LNK4078: multiple '.rodata' sections found with different attributes (C0000040)
+
+  Summary
+
+        1000 .buildid
+      CCD000 .data
+        1000 .eh_fram
+       C3000 .pdata
+     1428000 .rdata
+       4E000 .reloc
+       2D000 .rodata
+        2000 .rodata
+       43000 .rsrc
+     5CDF000 .text
+        1000 .tls

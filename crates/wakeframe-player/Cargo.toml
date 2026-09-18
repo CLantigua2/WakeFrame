@@ -1,0 +1,18 @@
+[package]
+name = "wakeframe-player"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+wakeframe-common = { path = "../wakeframe-common" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+libmpv = { path = "../../vendor/libmpv", default-features = true }
+windows = { version = "0.58", features = [
+	"Win32_Foundation",
+	"Win32_Graphics_Gdi",
+	"Win32_System_LibraryLoader",
+	"Win32_System_Com",
+	"Win32_UI_WindowsAndMessaging"
+] }

@@ -1,0 +1,12 @@
+target/
+dist/
+.vscode/
+.DS_Store
+*.log
+*.pdb
+*.exe
+*.user
+*.suo
+.idea/
+specsheet.md
+wakeframe design.png
