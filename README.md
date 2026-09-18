@@ -55,6 +55,12 @@ cargo run --bin wakeframe-agent -- simulate-resume
 
 ## Development
 
+This repository uses Git LFS for large binary assets, including the demo GIF and the bundled `libmpv-2.dll`. Install Git LFS before cloning or pushing changes:
+
+```bash
+git lfs install
+```
+
 Run the test suite and formatter before handing off changes:
 
 ```bash
